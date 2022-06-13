@@ -11,5 +11,5 @@
   margin-right: auto;
   width: 50%;
 }
-<style/>
+style/>
 <img src="pythonF1Req.png" class="center" img/>
