@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="/schemas/mrd-1.5.xsl"?>
-<MRData xmlns="http://ergast.com/mrd/1.5" series="f1" url="https://ergast.com/api/f1/2002/1" limit="30" offset="0"
-		total="1"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ergast.com/mrd/1.5 ">
-	<RaceTable season="2002" round="1">
-		<Race season="2002" round="1" url="http://en.wikipedia.org/wiki/2002_Australian_Grand_Prix">
-			<RaceName>Australian Grand Prix</RaceName>
-			<Circuit circuitId="albert_park" url="http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit">
-				<CircuitName>Albert Park Grand Prix Circuit</CircuitName>
-				<Location lat="-37.8497" long="144.968">
-					<Locality>Melbourne</Locality>
-					<Country>Australia</Country>
+<MRData xmlns="http://ergast.com/mrd/1.5" series="f1" url="http://ergast.com/api/f1/2001/3" limit="30" offset="0" total="1">
+	<RaceTable season="2001" round="3">
+		<Race season="2001" round="3" url="http://en.wikipedia.org/wiki/2001_Brazilian_Grand_Prix">
+			<RaceName>Brazilian Grand Prix</RaceName>
+			<Circuit circuitId="interlagos" url="http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace">
+				<CircuitName>Autódromo José Carlos Pace</CircuitName>
+				<Location lat="-23.7036" long="-46.6997">
+					<Locality>São Paulo</Locality>
+					<Country>Brazil</Country>
 				</Location>
 			</Circuit>
-			<Date>2002-03-03</Date>
+			<Date>2001-04-01</Date>
 		</Race>
 	</RaceTable>
 </MRData>
