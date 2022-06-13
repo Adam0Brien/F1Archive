@@ -7,5 +7,5 @@
 
 
 <p align="center">
-  <img width="460" height="300" src="pythonF1Req.png">
+  <img width="400" height="426" src="pythonF1Req.png">
 </p>
