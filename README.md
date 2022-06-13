@@ -4,7 +4,7 @@
 -As of right now you can enter details into the GUI and it will make a pull request from the ergast api website and write the xml file to data.xml
 <br>
 
-<style>
+<style
   .center {
   display: block;
   margin-left: auto;
