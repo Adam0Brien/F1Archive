@@ -4,6 +4,6 @@
 -As of right now you can enter details into the GUI and it will make a pull request from the ergast api website and write the xml file to data.xml
 <br>
 
-<div style="text-align: center;">
-<img src="pythonF1Req.png" img/>
-  </div>
+
+<img align="center" src="pythonF1Req.png" img/>
+
