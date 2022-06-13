@@ -38,6 +38,11 @@ def deleteAll():
     yearBox.delete(0,END)
     roundBox.delete(0,END)
 
+
+
+
+
+
 #============== tkinter ==============#
 
 yearLabel = Label(window, text="Enter a year"
