@@ -5,5 +5,7 @@
 <br>
 
 
-<img align="center" src="pythonF1Req.png" img/>
 
+<p align="center">
+  <img width="460" height="300" src="pythonF1Req.png">
+</p>
