@@ -1,38 +1,17 @@
 from tkinter import *
-
-
-
 import requests
-from lxml import etree
-from xml.etree import ElementTree
 
 
-
-
-# setup
+#setup
 window = Tk()  # instance of a window
 window.geometry("400x400")
 window.title("F1 Requests")
 window.config(background="grey")
+window.resizable(False,False)
 
 
-yearLabel = Label(window, text="Enter a year"
-                  , fg='green'
-                  , bg='black'
-                  , relief=RAISED,
-                  bd=10
-                  , padx=10
-                  , pady=10
-                  )
 
-roundLabel = Label(window, text="Enter a round"
-                  , fg='green'
-                  , bg='black'
-                  , relief=RAISED,
-                  bd=10
-                  , padx=10
-                  , pady=10
-                  )
+#functions#
 
 def submit():
 
@@ -58,6 +37,26 @@ def submit():
 def deleteAll():
     yearBox.delete(0,END)
     roundBox.delete(0,END)
+
+#============== tkinter ==============#
+
+yearLabel = Label(window, text="Enter a year"
+                  , fg='green'
+                  , bg='black'
+                  , relief=RAISED,
+                  bd=10
+                  , padx=10
+                  , pady=10
+                  )
+
+roundLabel = Label(window, text="Enter a round"
+                  , fg='green'
+                  , bg='black'
+                  , relief=RAISED,
+                  bd=10
+                  , padx=10
+                  , pady=10
+                  )
 
 
 yearBox = Entry(window, font='italics'
@@ -97,9 +96,6 @@ deleteButton = Button(window, text="Delete TextFields",
                       bd=10
                       )
 
-
-
-
 yearLabel.pack()
 yearBox.pack()
 roundLabel.pack()
@@ -107,6 +103,11 @@ roundBox.pack()
 submitButton.place(x=100, y=200)
 deleteButton.place(x=190, y=200)
 
+#============== tkinter end ==============#
+
+
+
+###original code###
 
 #####################
 # year = input("What year?: ")
