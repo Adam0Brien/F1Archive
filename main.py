@@ -1,5 +1,8 @@
+import os.path
 from tkinter import *
 import requests
+import os
+from xml.etree import ElementTree
 
 
 #setup
@@ -9,7 +12,19 @@ window.title("F1 Requests")
 window.config(background="grey")
 window.resizable(False,False)
 
+fileName = 'f1Data.xml'
+fullFile = os.path.abspath(os.path.join('data',fileName))
+print(fullFile)
 
+dom = ElementTree.parse(fullFile)
+print(dom)
+
+table = dom.findall('Race/RaceName')
+print(table)
+
+for c in table:
+    #date = c.find('Date').text
+    print(c.text)
 
 #functions#
 
@@ -25,7 +40,7 @@ def submit():
 
         r = requests.get("http://ergast.com/api/f1/"+year+"/"+round)
         # r = requests.get("http://ergast.com/api/f1/2021/1") # test
-        f = open('data.xml', 'a')
+        f = open('data/f1Data.xml', 'a')
 
 
         f.truncate(0)
@@ -118,12 +133,12 @@ deleteButton.place(x=190, y=200)
 # year = input("What year?: ")
 # round = input("What round?: ")
 #r = requests.get("http://ergast.com/api/f1/"+year+"/"+round)
-# f = open('data.xml', 'a')
+# f = open('f1Data.xml', 'a')
 #
 # f.truncate(0)
 # f.write(r.text)
 #
-# x = etree.parse('data.xml')
+# x = etree.parse('f1Data.xml')
 # print(etree.tostring(x, pretty_print=True))
 #########################
 
