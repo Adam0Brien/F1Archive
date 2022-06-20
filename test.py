@@ -1,6 +1,7 @@
 import os
 from xml.etree import ElementTree
-
+from lxml import etree
+import xml.etree.ElementTree as ET
 
 
 fileName = 'sampleData.xml'
@@ -12,6 +13,7 @@ dom = ElementTree.parse(fullFile)
 
 race = dom.findall('CD/TITLE')
 print(race)
+
 
 for r in race:
 

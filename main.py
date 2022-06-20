@@ -19,12 +19,13 @@ print(fullFile)
 dom = ElementTree.parse(fullFile)
 print(dom)
 
-table = dom.findall('Race/RaceName')
+
+table = dom.findall('./Race')
 print(table)
 
-for c in table:
-    #date = c.find('Date').text
-    print(c.text)
+
+
+
 
 #functions#
 
@@ -46,12 +47,38 @@ def submit():
         f.truncate(0)
         f.write(r.text)
 
+        textField.delete(1.0,"end")
+        #textField.insert(1.0,fullFile)
+
+
+        for c in table:
+            # date = c.find('Date').text
+            print('\n')
+            print(c.text)
+            RaceName = c.find('RaceName')
+            CircuitName = c.find('Circuit/CircuitName')
+            Country = c.find('Circuit/Location/Country')
+            Date = c.find('Date')
+
+
+
+            textField.insert(1.0,RaceName.text + '\n')
+            textField.insert(2.0,CircuitName.text + '\n')
+            textField.insert(3.0,Country.text + '\n')
+            textField.insert(4.0, Date.text)
+
+
+
+
+
+
 
 
 
 def deleteAll():
     yearBox.delete(0,END)
     roundBox.delete(0,END)
+    textField.delete(1.0,"end")
 
 
 
@@ -116,10 +143,20 @@ deleteButton = Button(window, text="Delete TextFields",
                       bd=10
                       )
 
+
+textField = Text(window,
+                 height=200,
+                 width=100,
+                 fg='green',
+                 bg='black',
+                 bd=10
+                 )
+
 yearLabel.pack()
 yearBox.pack()
 roundLabel.pack()
 roundBox.pack()
+textField.place(x=0,y=250)
 submitButton.place(x=100, y=200)
 deleteButton.place(x=190, y=200)
 
