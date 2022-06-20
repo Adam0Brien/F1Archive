@@ -28,5 +28,5 @@
  
 
 - BUGS: The data will only be displayed once certain parts of the XML are deleted (the first 3 lines) 
-   <img width="400" height="426" src="dataToComment.png">
+   <img width="800" height="426" src="dataToComment.png">
 </p>
