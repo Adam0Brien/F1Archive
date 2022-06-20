@@ -1,4 +1,4 @@
-# F1Requests (Work in Progress)
+# F1Archive (Work in Progress)
 
 <p align="center">
 -Using the ergast api to pull information about past F1 races
