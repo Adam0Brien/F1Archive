@@ -8,7 +8,7 @@
 -The details of where the race took place and at what date will then be displayed
   
 
-- BUGS: The data will only be displayed once certain parts of the XML are deleted (the first 3 lines) 
+
   
   
 <br>
@@ -18,3 +18,7 @@
 <p align="center">
   <img width="400" height="426" src="f1Req.png">
 </p>
+
+
+<br><br><br><br><br>
+- BUGS: The data will only be displayed once certain parts of the XML are deleted (the first 3 lines) 
