@@ -9,5 +9,5 @@
 </p>
 
 <p align="center">
-  <img width="400" height="426" src="pythonF1Req.png">
+  <img width="400" height="426" src="f1Req.png">
 </p>
