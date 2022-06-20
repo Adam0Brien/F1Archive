@@ -22,7 +22,7 @@
 
 <br><br><br><br><br>
 
-- What i Learned in this Project: How to Build a Python GUI, API Requests Using Python
+- What i Learned in this Project: How to Build a Python GUI using tkinter, API Requests Using Python
 
 <p align="center">
  
