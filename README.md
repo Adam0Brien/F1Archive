@@ -21,4 +21,7 @@
 
 
 <br><br><br><br><br>
+
+- What i Learned in this Project: How to Build a Python GUI, API Requests Using Python
+
 - BUGS: The data will only be displayed once certain parts of the XML are deleted (the first 3 lines) 
